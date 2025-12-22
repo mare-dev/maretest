@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{.Values.name}}
+  labels:
+    app: {{.Values.name}}
+    test: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{.Values.name}}
+      test: test
+  template:
+    metadata:
+      labels:
+        app: {{.Values.name}}
+        test: test
+    spec:
+      imagePullSecrets: {{.Values.dockercfg}}
+      containers:
+        - name: {{.Values.name}}
+          image: {{.Values.image}}
+          ports:
+            - containerPort: 80

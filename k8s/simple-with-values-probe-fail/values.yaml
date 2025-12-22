@@ -1,0 +1,5 @@
+name: marko-test-app
+image: nginx:stable
+
+servicePort: 80
+serviceTargetPort: 80
