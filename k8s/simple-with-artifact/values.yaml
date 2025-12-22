@@ -1,6 +1,9 @@
 name: marko-test-app
 image: <+artifact.image>
-dockercfg: <+primary.imagePullSecret>
+dockercfg: <+artifact.primary.imagePullSecret>
+dockercfg1: <+artifact.primary.imagePullSecretExp>
+dockercfg2: <+artifact.imagePullSecretExp>
+dockercfg3: <+primary.imagePullSecretExp>
 
 servicePort: 80
 serviceTargetPort: 80
