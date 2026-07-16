@@ -1,0 +1,5 @@
+service:
+  name: testrmtacc
+  identifier: testrmtacc
+  orgIdentifier: default
+  projectIdentifier: Test
