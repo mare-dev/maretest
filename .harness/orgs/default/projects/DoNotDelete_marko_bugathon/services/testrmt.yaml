@@ -1,5 +1,0 @@
-service:
-  name: testrmt
-  identifier: testrmt
-  orgIdentifier: default
-  projectIdentifier: Test
