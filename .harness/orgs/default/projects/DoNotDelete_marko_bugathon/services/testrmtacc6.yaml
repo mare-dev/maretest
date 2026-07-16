@@ -1,0 +1,6 @@
+service:
+  name: testrmtacc6
+  identifier: testrmtacc6
+  accountId: kmpySmUISimoRrJL6NL73w
+  orgIdentifier: default
+  projectIdentifier: Test
